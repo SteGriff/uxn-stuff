@@ -49,6 +49,23 @@ LIT "S #18 DEO
 
 The quote `"` rune doesn't push to the stack, so you still need the LIT command.
 
+## Macro
+
+Define a macro with the `%` rune
+
+```
+%MACRO_NAME { ( instructions go here ) }
+```
+
+## Screen
+
+x,y is left,top based
+
+To draw a pixel, push to x, and y, and then pixel (to set the colour/layer)
+
+Watch out that your labels and sub-labels are right for the screen device, or no pixel will appear. Check the official varvara page.
+
+
 
 
 
