@@ -1,0 +1,17 @@
+( digits.tal )
+( defs )
+|10 @Console [ &vector $2 &read $1 &pad $5 &write $1 &error $1 ]
+
+( macros )
+%EMIT { .Console/write DEO } ( char -- )
+%LF { #0a EMIT }
+%PRINT-DIGIT { #30 ADD EMIT }
+
+( main )
+|0100
+#01 PRINT-DIGIT
+#09 PRINT-DIGIT
+#09 PRINT-DIGIT
+#03 PRINT-DIGIT
+LF
+ 

@@ -1,0 +1,13 @@
+( hello.tal )
+( defs )
+|10 @Console [ &vector $2 &read $1 &pad $5 &write $1 &error $1 ]
+
+( macros )
+%EMIT { .Console/write DEO } ( char -- )
+%LF { #0a EMIT }
+
+( main )
+|0100 LIT 53 LIT 18 DEO
+#74 #18 DEO
+LIT "e EMIT
+LF

@@ -1,0 +1,17 @@
+( hello2.tal )
+( reordering to EMIT all together )
+( defs )
+|10 @Console [ &vector $2 &read $1 &pad $5 &write $1 &error $1 ]
+
+( macros )
+%EMIT { .Console/write DEO } ( char -- )
+%LF { #0a EMIT }
+
+( main )
+( add the string to the stack backwards )
+( "first in, last out" )
+|0100 LIT "f LIT "f LIT "i LIT "r LIT "G LIT "e LIT "t LIT "S
+EMIT EMIT EMIT EMIT
+EMIT EMIT EMIT EMIT
+LF
+
