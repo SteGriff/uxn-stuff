@@ -1,0 +1,34 @@
+( screen.tal )
+( defs )
+|00 @System [ &vector $2 &pad $6 &r $2 &g $2 &b $2 ]
+|10 @Console [ &vector $2 &read $1 &pad $5 &write $1 &error $1 ]
+|20 @Screen [ &vector $2 &width $2 &height $2 &auto $1 &pad $1 &x $2 &y $2 &addr $2 &pixel $1 &sprite $1 ]
+
+( macros )
+%PIX { #41 .Screen/pixel DEO } ( foreground, colour 1 )
+
+( main )
+|0100
+( set colours )
+#500f .System/r DEO2
+#b70f .System/g DEO2
+#a70f .System/b DEO2
+
+( draw horizontal line  )
+#0008 .Screen/x DEO2
+#0008 .Screen/y DEO2
+PIX
+#0009 .Screen/x DEO2
+PIX
+#000a .Screen/x DEO2
+PIX
+#000b .Screen/x DEO2
+PIX
+#000c .Screen/x DEO2
+PIX
+#000d .Screen/x DEO2
+PIX
+#000e .Screen/x DEO2
+PIX
+#000f .Screen/x DEO2
+PIX
