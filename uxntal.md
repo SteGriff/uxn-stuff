@@ -1,5 +1,20 @@
 # Uxn notes
 
+## My dev environment
+
+ + Open a terminal in `~/git/uxn-stuff/uxn`
+ + Run launcher
+ + Use this for building and running roms
+ + Press F4 to return to launcher, or to refresh it 
+
+You can run and detach a command in bash like `(launcher &)`
+
+ + Open another terminal in there
+ + Run left my-file.tal
+ + Use it for editing
+
+## Uxntal
+
 ```
 ( comment )
 ```
